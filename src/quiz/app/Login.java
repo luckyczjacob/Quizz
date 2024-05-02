@@ -42,6 +42,7 @@ public class Login extends JFrame implements ActionListener {
         rules.setFont(new Font("Times New Roman", TRUETYPE_FONT,20));
         rules.setBackground(Color.BLUE);
         rules.setForeground(Color.WHITE);
+        rules.addActionListener(this);
         add(rules);
 
         close = new JButton("Zavřít");
@@ -57,17 +58,13 @@ public class Login extends JFrame implements ActionListener {
     }
 
 
-
-
-
-
-
-
-
-
-
     public void actionPerformed(ActionEvent ae) {
-
+        if (ae.getSource() == rules){
+            setVisible(false);
+            new Rules();
+        } else if (ae.getSource() == close){
+            setVisible(false);
+        }
     }
     public static void main(String[] args) {
         new Login();
