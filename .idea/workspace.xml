@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a7bb3e66-66e0-454b-9ea4-d355b1253d89" name="Changes" comment="Pridani nadpisu a zadani jmena a tlacitek">
-      <change afterPath="$PROJECT_DIR$/src/quiz/app/Rules.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/quiz/app/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/quiz/app/Login.java" afterDir="false" />
+    <list default="true" id="a7bb3e66-66e0-454b-9ea4-d355b1253d89" name="Changes" comment="Presun z tlacitek na dalsi stranku, nebo zavreni programu. Vytvoreni tridy Rules">
+      <change afterPath="$PROJECT_DIR$/Rules" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/quiz/app/LoadRules.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/quiz/app/Rules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/quiz/app/Rules.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +40,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/IT/game"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -49,7 +52,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1714656980173</updated>
-      <workItem from="1714656981646" duration="5242000" />
+      <workItem from="1714656981646" duration="5595000" />
+      <workItem from="1715007792241" duration="3141000" />
     </task>
     <task id="LOCAL-00001" summary="Vztvoreni tridy login a pridani obrazku.">
       <created>1714658065659</created>
@@ -65,7 +69,14 @@
       <option name="project" value="LOCAL" />
       <updated>1714662178732</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Presun z tlacitek na dalsi stranku, nebo zavreni programu. Vytvoreni tridy Rules">
+      <created>1714662626438</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1714662626438</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -86,6 +97,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Vztvoreni tridy login a pridani obrazku." />
     <MESSAGE value="Pridani nadpisu a zadani jmena a tlacitek" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pridani nadpisu a zadani jmena a tlacitek" />
+    <MESSAGE value="Presun z tlacitek na dalsi stranku, nebo zavreni programu. Vytvoreni tridy Rules" />
+    <option name="LAST_COMMIT_MESSAGE" value="Presun z tlacitek na dalsi stranku, nebo zavreni programu. Vytvoreni tridy Rules" />
   </component>
 </project>
