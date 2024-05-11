@@ -11,25 +11,28 @@ public class Rules extends JFrame  {
         getContentPane().setBackground(Color.WHITE);
         setLayout(null);
 
-        JLabel heading = new JLabel("PRAVIDLA");
-        heading.setBounds(880,20,700,50);
-        heading.setFont(new Font("Viner Hand ITC", Font.BOLD, 50));
-        heading.setForeground(Color.BLACK);
-        add(heading);
 
         String filename = "Rules";
         LoadRules loadRules = new LoadRules();
         String[] lines = loadRules.loadTextFromFile(filename);
 
-        int y = 200;
+        int y = 300;
         for (String line : lines) {
             JLabel text = new JLabel(line);
-            text.setBounds(100, y, 700, 50);
+            text.setBounds(600, y, 700, 50);
             text.setFont(new Font("Viner Hand ITC", Font.BOLD, 20));
-            text.setForeground(Color.BLACK);
+            text.setForeground(Color.WHITE);
             add(text);
             y += 50;
         }
+
+
+        ImageIcon imageIcon = new ImageIcon(ClassLoader.getSystemResource("icons/rules3.png"));
+        JLabel icon = new JLabel(imageIcon);
+        icon.setBounds(0,0,1920,1080);
+        add(icon);
+
+
 
 
 
