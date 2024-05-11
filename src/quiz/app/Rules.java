@@ -18,12 +18,20 @@ public class Rules extends JFrame  {
         add(heading);
 
         String filename = "Rules";
+        LoadRules loadRules = new LoadRules();
+        String[] lines = loadRules.loadTextFromFile(filename);
 
-        JLabel text = new JLabel(LoadRules.loadTextFromFile(filename));
-        text.setBounds(880,200,700,50);
-        text.setFont(new Font("Viner Hand ITC", Font.BOLD, 20));
-        text.setForeground(Color.BLACK);
-        add(text);
+        int y = 200;
+        for (String line : lines) {
+            JLabel text = new JLabel(line);
+            text.setBounds(100, y, 700, 50);
+            text.setFont(new Font("Viner Hand ITC", Font.BOLD, 20));
+            text.setForeground(Color.BLACK);
+            add(text);
+            y += 50;
+        }
+
+
 
         setSize(1920,1080);
         setVisible(true);
