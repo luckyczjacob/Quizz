@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a7bb3e66-66e0-454b-9ea4-d355b1253d89" name="Changes" comment="Vypisování ze souboru">
-      <change afterPath="$PROJECT_DIR$/src/Quizz/Filmy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Quizz/Geografie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Quizz/Historie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Quizz/Literatura.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Quizz/Sport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Quizz/Veda.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/startQuiz/Start.java" afterDir="false" />
+    <list default="true" id="a7bb3e66-66e0-454b-9ea4-d355b1253d89" name="Changes" comment="Vytvoření tříd na quiz(témata).&#10;A třídy Start.">
+      <change afterPath="$PROJECT_DIR$/Historie" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/historie.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/sport.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/tema.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/veda.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/loadFiles/LoadQuestions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rules" beforeDir="false" afterPath="$PROJECT_DIR$/Rules" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Quizz/Historie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Quizz/Historie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/quiz/app/LoadRules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/loadFiles/LoadRules.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/quiz/app/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/quiz/app/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/quiz/app/Rules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/quiz/app/Rules.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/startQuiz/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/startQuiz/Start.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +66,8 @@
       <workItem from="1715413830902" duration="3374000" />
       <workItem from="1715431908518" duration="2885000" />
       <workItem from="1715448539932" duration="731000" />
-      <workItem from="1715674402515" duration="2710000" />
+      <workItem from="1715674402515" duration="3826000" />
+      <workItem from="1715705891795" duration="8865000" />
     </task>
     <task id="LOCAL-00001" summary="Vztvoreni tridy login a pridani obrazku.">
       <created>1714658065659</created>
@@ -93,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1715417965923</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Vytvoření tříd na quiz(témata).&#10;A třídy Start.">
+      <created>1715677226999</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1715677226999</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,6 +127,7 @@
     <MESSAGE value="Pridani nadpisu a zadani jmena a tlacitek" />
     <MESSAGE value="Presun z tlacitek na dalsi stranku, nebo zavreni programu. Vytvoreni tridy Rules" />
     <MESSAGE value="Vypisování ze souboru" />
-    <option name="LAST_COMMIT_MESSAGE" value="Vypisování ze souboru" />
+    <MESSAGE value="Vytvoření tříd na quiz(témata).&#10;A třídy Start." />
+    <option name="LAST_COMMIT_MESSAGE" value="Vytvoření tříd na quiz(témata).&#10;A třídy Start." />
   </component>
 </project>

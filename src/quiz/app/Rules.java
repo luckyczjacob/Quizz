@@ -1,5 +1,6 @@
 package quiz.app;
 
+import loadFiles.LoadRules;
 import startQuiz.Start;
 
 import javax.swing.*;
@@ -7,15 +8,17 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import static java.awt.Font.TRUETYPE_FONT;
+
 
 public class Rules extends JFrame implements ActionListener {
 
-    JButton start, close;
+    JButton start;
+    Font font = new Font("Arial",Font.BOLD,20);
 
     Rules(){
         getContentPane().setBackground(Color.WHITE);
         setLayout(null);
+        setTitle("Pravidla");
 
 
         String filename = "Rules";
@@ -26,15 +29,15 @@ public class Rules extends JFrame implements ActionListener {
         for (String line : lines) {
             JLabel text = new JLabel(line);
             text.setBounds(600, y, 700, 50);
-            text.setFont(new Font("Viner Hand ITC", Font.BOLD, 20));
+            text.setFont(font);
             text.setForeground(Color.WHITE);
             add(text);
             y += 50;
         }
 
-        start = new JButton("Start");
-        start.setBounds(890,600,130,25);
-        start.setFont(new Font("Times New Roman", TRUETYPE_FONT,20));
+        start = new JButton("Vybrat téma");
+        start.setBounds(860,600,150,40);
+        start.setFont(font);
         start.setBackground(Color.WHITE);
         start.setForeground(Color.BLACK);
         start.addActionListener(this);
@@ -63,7 +66,7 @@ public class Rules extends JFrame implements ActionListener {
         }
     }
 
-    /*public static void main(String[] args) {
-   /*     new Rules();
-    }*/
+    public static void main(String[] args) {
+        new Rules();
+    }
 }

@@ -1,4 +1,4 @@
-package quiz.app;
+package loadFiles;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

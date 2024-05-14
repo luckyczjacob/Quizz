@@ -1,74 +1,91 @@
 package startQuiz;
 
-import quiz.app.Rules;
+
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import static java.awt.Font.TRUETYPE_FONT;
+
 
 public class Start extends JFrame implements ActionListener {
 
-    JButton historie, sport, věda, film, literatura, geografie;
+    JButton historie, sport, veda, film, literatura, geografie;
+    Font font = new Font("Bla",Font.BOLD,40);
     public Start() {
-        getContentPane().setBackground(Color.CYAN);
+        getContentPane().setBackground(Color.WHITE);
         setLayout(null);
+        setTitle("Výběr tématu");
+        setLayout(new GridLayout(2, 3));
 
-        JLabel text = new JLabel("Vyberte si téma.");
-        text.setBounds(930,200,130,25);
-        text.setFont(new Font("Times New Roman", TRUETYPE_FONT,20));
-        text.setForeground(Color.BLACK);
-        text.setBackground(Color.WHITE);
-        add(text);
 
-        historie = new JButton("Start");
-        historie.setBounds(890,600,130,25);
-        historie.setFont(new Font("Times New Roman", TRUETYPE_FONT,20));
-        historie.setBackground(Color.WHITE);
-        historie.setForeground(Color.BLACK);
+
+        ImageIcon historieI = new ImageIcon(ClassLoader.getSystemResource("icons/historie.png"));
+        historie = new JButton("Historie");
+        historie.setBounds(95,170,450,300);
+        historie.setFont(font);
+        historie.setForeground(Color.WHITE);
         historie.addActionListener(this);
+        historie.setHorizontalTextPosition(SwingConstants.CENTER);
+        historie.setVerticalTextPosition(SwingConstants.CENTER);
         add(historie);
+        historie.setIcon(historieI);
 
-        sport = new JButton("Start");
-        sport.setBounds(890,600,130,25);
-        sport.setFont(new Font("Times New Roman", TRUETYPE_FONT,20));
-        sport.setBackground(Color.WHITE);
-        sport.setForeground(Color.BLACK);
+
+
+        ImageIcon sportI = new ImageIcon(ClassLoader.getSystemResource("icons/sport.png"));
+        sport = new JButton("Sport");
+        sport.setBounds(735,170,450,300);
+        sport.setFont(font);
+        sport.setForeground(Color.WHITE);
         sport.addActionListener(this);
+        sport.setHorizontalTextPosition(SwingConstants.CENTER);
+        sport.setVerticalTextPosition(SwingConstants.CENTER);
         add(sport);
+        sport.setIcon(sportI);
 
-        věda = new JButton("Start");
-        věda.setBounds(890,600,130,25);
-        věda.setFont(new Font("Times New Roman", TRUETYPE_FONT,20));
-        věda.setBackground(Color.WHITE);
-        věda.setForeground(Color.BLACK);
-        věda.addActionListener(this);
-        add(věda);
 
-        film = new JButton("Start");
-        film.setBounds(890,600,130,25);
-        film.setFont(new Font("Times New Roman", TRUETYPE_FONT,20));
+        ImageIcon vedaI = new ImageIcon(ClassLoader.getSystemResource("icons/veda.png"));
+        veda = new JButton("Věda");
+        veda.setBounds(1375,170,450,300);
+        veda.setFont(font);
+        veda.setForeground(Color.WHITE);
+        veda.addActionListener(this);
+        veda.setHorizontalTextPosition(SwingConstants.CENTER);
+        veda.setVerticalTextPosition(SwingConstants.CENTER);
+        add(veda);
+        veda.setIcon(vedaI);
+
+
+        film = new JButton("Film");
+        film.setBounds(95,620,450,300);
+        film.setFont(font);
         film.setBackground(Color.WHITE);
         film.setForeground(Color.BLACK);
         film.addActionListener(this);
+        film.setHorizontalTextPosition(SwingConstants.CENTER);
+        film.setVerticalTextPosition(SwingConstants.CENTER);
         add(film);
 
-        literatura = new JButton("Start");
-        literatura.setBounds(890,600,130,25);
-        literatura.setFont(new Font("Times New Roman", TRUETYPE_FONT,20));
+        literatura = new JButton("Literatura");
+        literatura.setBounds(735,620,450,300);
+        literatura.setFont(font);
         literatura.setBackground(Color.WHITE);
         literatura.setForeground(Color.BLACK);
         literatura.addActionListener(this);
+        literatura.setHorizontalTextPosition(SwingConstants.CENTER);
+        literatura.setVerticalTextPosition(SwingConstants.CENTER);
         add(literatura);
 
-        geografie = new JButton("Start");
-        geografie.setBounds(890,600,130,25);
-        geografie.setFont(new Font("Times New Roman", TRUETYPE_FONT,20));
+        geografie = new JButton("Geografie");
+        geografie.setBounds(1375,620,450,300);
+        geografie.setFont(font);
         geografie.setBackground(Color.WHITE);
         geografie.setForeground(Color.BLACK);
         geografie.addActionListener(this);
+        geografie.setHorizontalTextPosition(SwingConstants.CENTER);
+        geografie.setVerticalTextPosition(SwingConstants.CENTER);
         add(geografie);
 
 
