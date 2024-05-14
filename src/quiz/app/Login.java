@@ -36,13 +36,13 @@ public class Login extends JFrame implements ActionListener {
         tfname.setFont(new Font("Times New Roman", TRUETYPE_FONT,20));
         add(tfname);
 
-       /* rules = new JButton("Pravidla");
+        rules = new JButton("Pravidla");
         rules.setBounds(853,430,130,25);
         rules.setFont(new Font("Times New Roman", TRUETYPE_FONT,20));
         rules.setBackground(Color.BLUE);
         rules.setForeground(Color.WHITE);
         rules.addActionListener(this);
-        add(rules);*/
+        add(rules);
 
         close = new JButton("Zavřít");
         close.setBounds(997,430,130,25);
