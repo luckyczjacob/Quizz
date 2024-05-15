@@ -17,7 +17,7 @@ public class Historie extends JFrame {
 
     public Historie() {
         setTitle("Historie");
-        getContentPane().setBackground(Color.CYAN);
+
         setLayout(null);
 
         String filename = "Historie";
@@ -33,6 +33,11 @@ public class Historie extends JFrame {
         add(nextButton);
 
         showNextQuestion();
+
+        ImageIcon pozadi = new ImageIcon(ClassLoader.getSystemResource("icons/pozadi.png"));
+        JLabel image = new JLabel(pozadi);
+        image.setBounds(0,0,1920,1080);
+        add(image);
 
         setSize(1920, 1080);
         setVisible(true);

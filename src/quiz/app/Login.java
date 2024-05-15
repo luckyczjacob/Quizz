@@ -22,40 +22,43 @@ public class Login extends JFrame implements ActionListener {
 
 
         JLabel heading = new JLabel("QUIZ");
-        heading.setBounds(900,150,200,80);
+        heading.setBounds(850,150,200,80);
         heading.setFont(new Font("Arial", Font.BOLD, 80));
-        heading.setForeground(Color.BLUE);
+        heading.setForeground(Color.WHITE);
         add(heading);
 
 
         JLabel name = new JLabel("Zadejte jméno");
-        name.setBounds(870,300,500,90);
+        name.setBounds(810,300,500,90);
         name.setFont(font);
-        name.setForeground(Color.BLUE);
+        name.setForeground(Color.WHITE);
         add(name);
 
         JTextField tfname = new JTextField();
-        tfname.setBounds(853,370,275,35);
+        tfname.setBounds(803,370,275,35);
         tfname.setFont(font2);
+        tfname.setForeground(Color.BLUE);
+        tfname.setHorizontalAlignment(SwingConstants.CENTER);
         add(tfname);
 
         rules = new JButton("Start");
-        rules.setBounds(853,430,130,25);
+        rules.setBounds(803,430,130,25);
         rules.setFont(font2);
         rules.setBackground(Color.BLUE);
         rules.setForeground(Color.WHITE);
         rules.addActionListener(this);
         add(rules);
 
+
         close = new JButton("Zavřít");
-        close.setBounds(997,430,130,25);
+        close.setBounds(947,430,130,25);
         close.setFont(font2);
         close.setBackground(Color.BLUE);
         close.setForeground(Color.WHITE);
         close.addActionListener(this);
         add(close);
 
-        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("icons/login4.jpg"));
+        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("icons/logi.jpg"));
         JLabel image = new JLabel(i1);
         image.setBounds(0,0,1920,1080);
         add(image);

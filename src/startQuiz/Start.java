@@ -11,15 +11,13 @@ import java.awt.event.ActionListener;
 
 public class Start extends JFrame implements ActionListener {
 
-    JButton historie, sport, veda, film, literatura, geografie;
+    JButton historie, sport, veda, filmy, literatura, geografie;
     Font font = new Font("Bla",Font.BOLD,40);
     public Start() {
         getContentPane().setBackground(Color.WHITE);
         setLayout(null);
         setTitle("Výběr tématu");
         setLayout(new GridLayout(2, 3));
-
-
 
         ImageIcon historieI = new ImageIcon(ClassLoader.getSystemResource("icons/historie.png"));
         historie = new JButton("Historie");
@@ -32,8 +30,6 @@ public class Start extends JFrame implements ActionListener {
         add(historie);
         historie.setIcon(historieI);
 
-
-
         ImageIcon sportI = new ImageIcon(ClassLoader.getSystemResource("icons/sport.png"));
         sport = new JButton("Sport");
         sport.setBounds(735,170,450,300);
@@ -44,7 +40,6 @@ public class Start extends JFrame implements ActionListener {
         sport.setVerticalTextPosition(SwingConstants.CENTER);
         add(sport);
         sport.setIcon(sportI);
-
 
         ImageIcon vedaI = new ImageIcon(ClassLoader.getSystemResource("icons/veda.png"));
         veda = new JButton("Věda");
@@ -57,42 +52,41 @@ public class Start extends JFrame implements ActionListener {
         add(veda);
         veda.setIcon(vedaI);
 
+        ImageIcon filmyI = new ImageIcon(ClassLoader.getSystemResource("icons/filmy.png"));
+        filmy = new JButton("Filmy");
+        filmy.setBounds(95,620,450,300);
+        filmy.setFont(font);
+        filmy.setForeground(Color.WHITE);
+        filmy.addActionListener(this);
+        filmy.setHorizontalTextPosition(SwingConstants.CENTER);
+        filmy.setVerticalTextPosition(SwingConstants.CENTER);
+        add(filmy);
+        filmy.setIcon(filmyI);
 
-        film = new JButton("Film");
-        film.setBounds(95,620,450,300);
-        film.setFont(font);
-        film.setBackground(Color.WHITE);
-        film.setForeground(Color.BLACK);
-        film.addActionListener(this);
-        film.setHorizontalTextPosition(SwingConstants.CENTER);
-        film.setVerticalTextPosition(SwingConstants.CENTER);
-        add(film);
-
+        ImageIcon literaturaI = new ImageIcon(ClassLoader.getSystemResource("icons/literatura.png"));
         literatura = new JButton("Literatura");
         literatura.setBounds(735,620,450,300);
         literatura.setFont(font);
-        literatura.setBackground(Color.WHITE);
-        literatura.setForeground(Color.BLACK);
+        literatura.setForeground(Color.WHITE);
         literatura.addActionListener(this);
         literatura.setHorizontalTextPosition(SwingConstants.CENTER);
         literatura.setVerticalTextPosition(SwingConstants.CENTER);
         add(literatura);
+        literatura.setIcon(literaturaI);
 
+        ImageIcon geografieI = new ImageIcon(ClassLoader.getSystemResource("icons/geografie.png"));
         geografie = new JButton("Geografie");
         geografie.setBounds(1375,620,450,300);
         geografie.setFont(font);
-        geografie.setBackground(Color.WHITE);
-        geografie.setForeground(Color.BLACK);
+        geografie.setForeground(Color.WHITE);
         geografie.addActionListener(this);
         geografie.setHorizontalTextPosition(SwingConstants.CENTER);
         geografie.setVerticalTextPosition(SwingConstants.CENTER);
         add(geografie);
-
-
+        geografie.setIcon(geografieI);
 
         setSize(1920,1080);
         setVisible(true);
-
     }
 
     public static void main(String[] args) {
