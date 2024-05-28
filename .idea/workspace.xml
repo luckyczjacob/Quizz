@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a7bb3e66-66e0-454b-9ea4-d355b1253d89" name="Changes" comment="Trida start vzhled">
-      <change afterPath="$PROJECT_DIR$/HistorieOdpovedi" afterDir="false" />
+    <list default="true" id="a7bb3e66-66e0-454b-9ea4-d355b1253d89" name="Changes" comment="Vytvoření souboru HistorieOdpovedi a prejmenovani souboru Historie na HistorieOtazky.&#10;Přídání otázek a odpovědí na téma Historie.">
+      <change afterPath="$PROJECT_DIR$/src/loadFiles/LoadAnswers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Historie" beforeDir="false" afterPath="$PROJECT_DIR$/HistorieOtazky" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Quizz/Historie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Quizz/Historie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/loadFiles/LoadQuestions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/loadFiles/LoadQuestions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/startQuiz/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/startQuiz/Start.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HistorieOdpovedi" beforeDir="false" afterPath="$PROJECT_DIR$/HistorieOdpovedi" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +63,7 @@
       <workItem from="1715795378366" duration="200000" />
       <workItem from="1716622904593" duration="1541000" />
       <workItem from="1716905190418" duration="5308000" />
-      <workItem from="1716925156401" duration="297000" />
+      <workItem from="1716925156401" duration="2536000" />
     </task>
     <task id="LOCAL-00001" summary="Vztvoreni tridy login a pridani obrazku.">
       <created>1714658065659</created>
@@ -110,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1715784649149</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Vytvoření souboru HistorieOdpovedi a prejmenovani souboru Historie na HistorieOtazky.&#10;Přídání otázek a odpovědí na téma Historie.">
+      <created>1716925842243</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1716925842243</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,6 +139,7 @@
     <MESSAGE value="Vypisování ze souboru" />
     <MESSAGE value="Vytvoření tříd na quiz(témata).&#10;A třídy Start." />
     <MESSAGE value="Trida start vzhled" />
-    <option name="LAST_COMMIT_MESSAGE" value="Trida start vzhled" />
+    <MESSAGE value="Vytvoření souboru HistorieOdpovedi a prejmenovani souboru Historie na HistorieOtazky.&#10;Přídání otázek a odpovědí na téma Historie." />
+    <option name="LAST_COMMIT_MESSAGE" value="Vytvoření souboru HistorieOdpovedi a prejmenovani souboru Historie na HistorieOtazky.&#10;Přídání otázek a odpovědí na téma Historie." />
   </component>
 </project>
