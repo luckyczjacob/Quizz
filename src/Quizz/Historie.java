@@ -4,9 +4,6 @@ import loadFiles.LoadQuestions;
 
 import javax.swing.*;
 import java.awt.*;
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
 import java.util.ArrayList;
 
 public class Historie extends JFrame {
@@ -17,10 +14,9 @@ public class Historie extends JFrame {
 
     public Historie() {
         setTitle("Historie");
-
         setLayout(null);
 
-        String filename = "Historie";
+        String filename = "HistorieOtazky";
         questions = LoadQuestions.loadQuestionsFromFile(filename);
 
         questionLabel = new JLabel();
@@ -34,10 +30,10 @@ public class Historie extends JFrame {
 
         showNextQuestion();
 
-        ImageIcon pozadi = new ImageIcon(ClassLoader.getSystemResource("icons/pozadi.png"));
+       /* ImageIcon pozadi = new ImageIcon(ClassLoader.getSystemResource("icons/pozadi.png"));
         JLabel image = new JLabel(pozadi);
         image.setBounds(0,0,1920,1080);
-        add(image);
+        add(image);*/
 
         setSize(1920, 1080);
         setVisible(true);

@@ -2,6 +2,8 @@ package startQuiz;
 
 
 
+import Quizz.*;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -95,6 +97,24 @@ public class Start extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent ae) {
-
+        if (ae.getSource() == historie) {
+            setVisible(false);
+            new Historie();
+        } else if (ae.getSource() == sport) {
+            setVisible(false);
+            new Sport();
+        } else if (ae.getSource() == veda) {
+            setVisible(false);
+            new Veda();
+        } else if (ae.getSource() == filmy) {
+            setVisible(false);
+            new Filmy();
+        } else if (ae.getSource() == literatura) {
+            setVisible(false);
+            new Literatura();
+        } else if (ae.getSource() == geografie) {
+            setVisible(false);
+            new Geografie();
+        }
     }
 }
