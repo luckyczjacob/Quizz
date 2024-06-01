@@ -107,9 +107,7 @@ public class Start extends JFrame implements ActionListener {
 
 
 
-    public static void main(String[] args) {
-        new Start();
-    }
+
 
     /**
      * Metoda volaná při stisknutí tlačítka. Otevře nové okno s tématem kvízu.

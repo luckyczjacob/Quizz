@@ -58,7 +58,7 @@ public class Metody {
             JOptionPane.showMessageDialog(null, "Odpověděli jste na všechny otázky.", "Konec kvízu", JOptionPane.INFORMATION_MESSAGE);
             UlozitSkore.ulozit(pocetSpravnychOdpovedi);
             zastavitCasovac();
-            new Kongratulace(pocetSpravnychOdpovedi);
+            new Kongratulace();
         }
         indexAktualniOtazky++;
     }
@@ -136,7 +136,7 @@ public class Metody {
                     zastavitCasovac();
                     JOptionPane.showMessageDialog(frame, "Čas vypršel!", "Konec kvízu", JOptionPane.INFORMATION_MESSAGE);
                     UlozitSkore.ulozit(pocetSpravnychOdpovedi);
-                    new Kongratulace(pocetSpravnychOdpovedi);
+                    new Kongratulace();
                 }
             }
         });

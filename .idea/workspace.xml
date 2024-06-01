@@ -1,31 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a7bb3e66-66e0-454b-9ea4-d355b1253d89" name="Changes" comment="Vytvoření tříd pro načítání, zapisování skore a jmena do souboru, ktera se budou objevovat v scoreboardu. &#10;Přejmenovávání anglických výrazů do českých.&#10;Doplnění JavaDocs do tříd">
-      <change afterPath="$PROJECT_DIR$/src/loadFiles/NacistUzivatele.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/loadFiles/UlozitSkore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/quiz/app/Scoreboard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/quiz/app/ScoreboardOkno.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/startQuiz/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uzivatel.txt" afterDir="false" />
+    <list default="true" id="a7bb3e66-66e0-454b-9ea4-d355b1253d89" name="Changes" comment="Vytvoření tříd pro načítání, zapisování skore a jmena do souboru, ktera se budou objevovat v scoreboardu. &#10;Přejmenovávání anglických výrazů do českých.&#10;Doplnění JavaDocs do tříd.&#10;Metoda na zastavení časovače, protože když se program vypne, po 5 minutách vyskočí oznámení">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rules" beforeDir="false" afterPath="$PROJECT_DIR$/Pravidla" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SportOdpovedi" beforeDir="false" afterPath="$PROJECT_DIR$/SportOdpovedi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SportOtazky" beforeDir="false" afterPath="$PROJECT_DIR$/SportOtazky" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Quizz/Filmy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Quizz/Filmy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Quizz/Geografie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Quizz/Geografie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Quizz/Historie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Quizz/Historie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Quizz/Literatura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Quizz/Literatura.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Quizz/Sport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Quizz/Sport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Quizz/Veda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Quizz/Veda.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/loadFiles/LoadAnswers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/loadFiles/NacistOdpovedi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/loadFiles/LoadQuestions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/loadFiles/NacistOtazky.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/loadFiles/LoadRules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/loadFiles/NacistPravidla.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/quiz/app/Kongratulace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/quiz/app/Kongratulace.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/quiz/app/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/quiz/app/Prihlaseni.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/quiz/app/Metody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/quiz/app/Metody.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/quiz/app/Rules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/quiz/app/Pravidla.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/startQuiz/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/startQuiz/Start.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +68,7 @@
       <workItem from="1717060898339" duration="4050000" />
       <workItem from="1717158408650" duration="3526000" />
       <workItem from="1717183204321" duration="5933000" />
-      <workItem from="1717228057515" duration="31272000" />
+      <workItem from="1717228057515" duration="34226000" />
     </task>
     <task id="LOCAL-00001" summary="Vztvoreni tridy login a pridani obrazku.">
       <created>1714658065659</created>
@@ -182,7 +161,21 @@
       <option name="project" value="LOCAL" />
       <updated>1717245207373</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Vytvoření tříd pro načítání, zapisování skore a jmena do souboru, ktera se budou objevovat v scoreboardu. &#10;Přejmenovávání anglických výrazů do českých.&#10;Doplnění JavaDocs do tříd.&#10;Metoda na zastavení časovače, protože když se program vypne, po 5 minutách vyskočí oznámení">
+      <created>1717260160984</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1717260160984</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Vytvoření tříd pro načítání, zapisování skore a jmena do souboru, ktera se budou objevovat v scoreboardu. &#10;Přejmenovávání anglických výrazů do českých.&#10;Doplnění JavaDocs do tříd.&#10;Metoda na zastavení časovače, protože když se program vypne, po 5 minutách vyskočí oznámení">
+      <created>1717260172637</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1717260172637</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,6 +208,7 @@
     <MESSAGE value="Změna některých otázek.&#10;Vytvoření konečného okna kde se ukazuje počet správných odpovědí.Přemístění tlačítek odpovědí." />
     <MESSAGE value="Přidání timeru na 5 minut a textu na tlacitko.Odpočítávání" />
     <MESSAGE value="Vytvoření tříd pro načítání, zapisování skore a jmena do souboru, ktera se budou objevovat v scoreboardu. &#10;Přejmenovávání anglických výrazů do českých.&#10;Doplnění JavaDocs do tříd" />
-    <option name="LAST_COMMIT_MESSAGE" value="Vytvoření tříd pro načítání, zapisování skore a jmena do souboru, ktera se budou objevovat v scoreboardu. &#10;Přejmenovávání anglických výrazů do českých.&#10;Doplnění JavaDocs do tříd" />
+    <MESSAGE value="Vytvoření tříd pro načítání, zapisování skore a jmena do souboru, ktera se budou objevovat v scoreboardu. &#10;Přejmenovávání anglických výrazů do českých.&#10;Doplnění JavaDocs do tříd.&#10;Metoda na zastavení časovače, protože když se program vypne, po 5 minutách vyskočí oznámení" />
+    <option name="LAST_COMMIT_MESSAGE" value="Vytvoření tříd pro načítání, zapisování skore a jmena do souboru, ktera se budou objevovat v scoreboardu. &#10;Přejmenovávání anglických výrazů do českých.&#10;Doplnění JavaDocs do tříd.&#10;Metoda na zastavení časovače, protože když se program vypne, po 5 minutách vyskočí oznámení" />
   </component>
 </project>

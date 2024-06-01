@@ -127,7 +127,4 @@ public class Geografie extends JFrame {
     }
 
 
-    public static void main(String[] args) {
-        new Geografie();
-    }
 }

@@ -127,7 +127,5 @@ public class Historie extends JFrame {
     }
 
 
-    public static void main(String[] args) {
-        new Historie();
-    }
+
 }

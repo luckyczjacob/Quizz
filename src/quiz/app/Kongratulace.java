@@ -10,7 +10,7 @@ import java.awt.event.ActionListener;
 public class Kongratulace extends JFrame implements ActionListener {
 
     JButton scoreboard;
-        public Kongratulace(int totalCorrectAnswers) {
+        public Kongratulace(int spravneOdpovedi) {
 
             setTitle("Gratulace");
             setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -18,7 +18,7 @@ public class Kongratulace extends JFrame implements ActionListener {
             setLayout(null);
 
             JLabel label = new JLabel("Gratulujeme! Dokončili jste kvíz.");
-            label.setBounds(850,150,400,80);
+            label.setBounds(825,150,400,80);
             label.setForeground(Color.WHITE);
             label.setFont(new Font("Arial", Font.BOLD, 20));
             add(label);
@@ -26,7 +26,7 @@ public class Kongratulace extends JFrame implements ActionListener {
             /**
              * Celkový počet správných odpovědí
              */
-            JLabel correctLabel = new JLabel("Získali jste celkem " + totalCorrectAnswers + " správných odpovědí.");
+            JLabel correctLabel = new JLabel("Získali jste celkem " + spravneOdpovedi + " správných odpovědí.");
             correctLabel.setForeground(Color.WHITE);
             correctLabel.setBounds(800,200,400,80);
             correctLabel.setFont(new Font("Arial", Font.BOLD, 20));
@@ -35,8 +35,9 @@ public class Kongratulace extends JFrame implements ActionListener {
             /**
              * Tlačítko pro zobrazení skóre
              */
-            scoreboard = new JButton("Start");
-            scoreboard.setBounds(803,430,130,25);
+            scoreboard = new JButton("Scoreboard");
+            scoreboard.setBounds(760,430,400,100);
+            scoreboard.setFont(new Font("Arial", Font.BOLD, 40));
             scoreboard.setBackground(Color.BLUE);
             scoreboard.setForeground(Color.WHITE);
             scoreboard.addActionListener(this);
@@ -57,6 +58,7 @@ public class Kongratulace extends JFrame implements ActionListener {
             new ScoreboardOkno();
         }
     }
+
 }
 
 

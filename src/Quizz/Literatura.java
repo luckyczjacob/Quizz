@@ -127,7 +127,5 @@ public class Literatura extends JFrame {
     }
 
 
-    public static void main(String[] args) {
-        new Literatura();
-    }
+
 }
