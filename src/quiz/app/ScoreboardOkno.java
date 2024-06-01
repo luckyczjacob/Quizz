@@ -50,9 +50,7 @@ import java.util.List;
      * @param args Argumenty příkazové řádky.
      */
 
-        public static void main(String[] args) {
-            new ScoreboardOkno();
-        }
+
 
     }
 

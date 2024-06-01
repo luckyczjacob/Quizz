@@ -103,9 +103,7 @@ public class Prihlaseni extends JFrame implements ActionListener {
             setVisible(false);
         }
     }
-    public static void main(String[] args) {
-        new Prihlaseni();
-    }
+
 
     /**
      * Statická vnitřní třída, která ukládá jméno uživatele do souboru
