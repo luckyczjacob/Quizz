@@ -1,10 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a7bb3e66-66e0-454b-9ea4-d355b1253d89" name="Changes" comment="Vytvoření souboru HistorieOdpovedi a prejmenovani souboru Historie na HistorieOtazky.&#10;Přídání otázek a odpovědí na téma Historie.">
-      <change afterPath="$PROJECT_DIR$/src/loadFiles/LoadAnswers.java" afterDir="false" />
+    <list default="true" id="a7bb3e66-66e0-454b-9ea4-d355b1253d89" name="Changes" comment="Přidání metody na kontrolování správnosti odpovědi. Změnění metody showNextQuestion.&#10;Vytvoření třídy ReakceOdpovedi pro reakci po kliknutí na odpověď.">
+      <change afterPath="$PROJECT_DIR$/FilmyOdpovedi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FilmyOtazky" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GeografieOdpovedi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GeografieOtazky" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LiteraturaOdpovedi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LiteraturaOtazky" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HistorieOdpovedi" beforeDir="false" afterPath="$PROJECT_DIR$/HistorieOdpovedi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SportOdpovedi" beforeDir="false" afterPath="$PROJECT_DIR$/SportOdpovedi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SportOtazky" beforeDir="false" afterPath="$PROJECT_DIR$/SportOtazky" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Quizz/Filmy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Quizz/Filmy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Quizz/Geografie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Quizz/Geografie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Quizz/Historie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Quizz/Historie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Quizz/Literatura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Quizz/Literatura.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Quizz/Sport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Quizz/Sport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Quizz/Veda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Quizz/Veda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/loadFiles/LoadRules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/loadFiles/LoadRules.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +27,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -63,7 +77,11 @@
       <workItem from="1715795378366" duration="200000" />
       <workItem from="1716622904593" duration="1541000" />
       <workItem from="1716905190418" duration="5308000" />
-      <workItem from="1716925156401" duration="2536000" />
+      <workItem from="1716925156401" duration="2775000" />
+      <workItem from="1717060898339" duration="4050000" />
+      <workItem from="1717158408650" duration="3526000" />
+      <workItem from="1717183204321" duration="5933000" />
+      <workItem from="1717228057515" duration="1749000" />
     </task>
     <task id="LOCAL-00001" summary="Vztvoreni tridy login a pridani obrazku.">
       <created>1714658065659</created>
@@ -114,7 +132,28 @@
       <option name="project" value="LOCAL" />
       <updated>1716925842243</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Vytvoření třídy LoadAnswers, která bude načítat text ze souboru na obrazovku.">
+      <created>1716927937244</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1716927937244</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Vytvoření tlačítek na odpovědi.">
+      <created>1717062757603</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1717062757603</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Přidání metody na kontrolování správnosti odpovědi. Změnění metody showNextQuestion.&#10;Vytvoření třídy ReakceOdpovedi pro reakci po kliknutí na odpověď.">
+      <created>1717160325966</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1717160325966</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,6 +179,9 @@
     <MESSAGE value="Vytvoření tříd na quiz(témata).&#10;A třídy Start." />
     <MESSAGE value="Trida start vzhled" />
     <MESSAGE value="Vytvoření souboru HistorieOdpovedi a prejmenovani souboru Historie na HistorieOtazky.&#10;Přídání otázek a odpovědí na téma Historie." />
-    <option name="LAST_COMMIT_MESSAGE" value="Vytvoření souboru HistorieOdpovedi a prejmenovani souboru Historie na HistorieOtazky.&#10;Přídání otázek a odpovědí na téma Historie." />
+    <MESSAGE value="Vytvoření třídy LoadAnswers, která bude načítat text ze souboru na obrazovku." />
+    <MESSAGE value="Vytvoření tlačítek na odpovědi." />
+    <MESSAGE value="Přidání metody na kontrolování správnosti odpovědi. Změnění metody showNextQuestion.&#10;Vytvoření třídy ReakceOdpovedi pro reakci po kliknutí na odpověď." />
+    <option name="LAST_COMMIT_MESSAGE" value="Přidání metody na kontrolování správnosti odpovědi. Změnění metody showNextQuestion.&#10;Vytvoření třídy ReakceOdpovedi pro reakci po kliknutí na odpověď." />
   </component>
 </project>

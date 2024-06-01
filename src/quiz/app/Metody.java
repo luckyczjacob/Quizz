@@ -31,9 +31,9 @@ public class Metody {
             int correctIndex = correctAnswers.get(currentQuestionIndex - 1); // -1 because currentQuestionIndex was incremented in showNextQuestion
             boolean isCorrect = selectedAnswerIndex == correctIndex;
             if (isCorrect) {
-                JOptionPane.showMessageDialog(null, "spravne", "ddd", JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.showMessageDialog(null, "Správně", "Jeej", JOptionPane.INFORMATION_MESSAGE);
             } else {
-                JOptionPane.showMessageDialog(null, "spatne", "sss", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(null, "Špatně", "Oops", JOptionPane.ERROR_MESSAGE);
             }
         }
     }

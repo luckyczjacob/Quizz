@@ -6,6 +6,8 @@ import quiz.app.Metody;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -57,7 +59,12 @@ public class Sport extends JFrame {
 
         nextButton = new JButton("Další otázka");
         nextButton.setBounds(50, 400, 150, 50);
-        nextButton.addActionListener(e -> Metody.showNextQuestion(questions, answers, questionLabel, answerButtons));
+        nextButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Metody.showNextQuestion(questions, answers, questionLabel, answerButtons);
+            }
+        });
         add(nextButton);
 
         Metody.showNextQuestion(questions, answers, questionLabel, answerButtons);

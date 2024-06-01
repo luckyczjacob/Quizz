@@ -21,7 +21,4 @@ public class LoadRules {
         }
         return lines.toArray(new String[0]);
     }
-
-
-
 }
