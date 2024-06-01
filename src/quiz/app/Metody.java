@@ -11,6 +11,8 @@ public class Metody {
     private static int currentQuestionIndex = 0;
     private static int selectedAnswerIndex = -1;
     public static int totalCorrectAnswers = 0;
+    private static Timer timer;
+    private static JLabel timerLabel;
 
     public static void showNextQuestion(ArrayList<String> questions, HashMap<Integer, ArrayList<String>> answers, JLabel questionLabel, JButton[] answerButtons) {
         if (currentQuestionIndex < questions.size()) {
@@ -66,6 +68,26 @@ public class Metody {
             }
             checkAnswer(correctAnswers, currentQuestionIndex, index);
         }
+    }
+
+    public static void startTimer(JFrame frame, JLabel label) {
+        timerLabel = label;
+        timer = new Timer(1000, new ActionListener() {
+            int remainingTime = 300;
+
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                remainingTime--;
+                if (remainingTime >= 0) {
+                    timerLabel.setText("Čas: " + remainingTime + " sekund");
+                } else {
+                    timer.stop();
+                    JOptionPane.showMessageDialog(frame, "Čas vypršel!", "Konec kvízu", JOptionPane.INFORMATION_MESSAGE);
+                    new Kongratulace(totalCorrectAnswers);
+                }
+            }
+        });
+        timer.start();
     }
 
 

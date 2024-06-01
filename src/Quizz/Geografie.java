@@ -19,6 +19,7 @@ public class Geografie extends JFrame {
     private JLabel questionLabel;
     private JButton nextButton;
     private JButton[] answerButtons;
+    private JLabel timerLabel;
 
     public Geografie() {
         setTitle("Geografie");
@@ -77,6 +78,10 @@ public class Geografie extends JFrame {
         nextButton.setBounds(460, 820, 250, 70);
         nextButton.setBackground(Color.WHITE);
         nextButton.setForeground(Color.BLACK);
+
+        timerLabel = new JLabel("Čas: 300 sekund");
+        timerLabel.setBounds(540, 900, 250, 70);
+        add(timerLabel);
         nextButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -90,6 +95,8 @@ public class Geografie extends JFrame {
         JLabel image = new JLabel(i1);
         image.setBounds(0,0,1920,1080);
         add(image);
+
+        Metody.startTimer(this,timerLabel);
         setVisible(true);
     }
 

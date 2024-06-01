@@ -1,22 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a7bb3e66-66e0-454b-9ea4-d355b1253d89" name="Changes" comment="Vytvoření otázek a odpovědí pro všechny témata.">
-      <change afterPath="$PROJECT_DIR$/src/icons/pozadi22.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/quiz/app/Kongratulace.java" afterDir="false" />
+    <list default="true" id="a7bb3e66-66e0-454b-9ea4-d355b1253d89" name="Changes" comment="Změna některých otázek.&#10;Vytvoření konečného okna kde se ukazuje počet správných odpovědí.Přemístění tlačítek odpovědí.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FilmyOdpovedi" beforeDir="false" afterPath="$PROJECT_DIR$/FilmyOdpovedi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FilmyOtazky" beforeDir="false" afterPath="$PROJECT_DIR$/FilmyOtazky" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LiteraturaOtazky" beforeDir="false" afterPath="$PROJECT_DIR$/LiteraturaOtazky" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SportOdpovedi" beforeDir="false" afterPath="$PROJECT_DIR$/SportOdpovedi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SportOtazky" beforeDir="false" afterPath="$PROJECT_DIR$/SportOtazky" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Quizz/Filmy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Quizz/Filmy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Quizz/Geografie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Quizz/Geografie.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Quizz/Historie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Quizz/Historie.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Quizz/Literatura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Quizz/Literatura.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Quizz/Sport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Quizz/Sport.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Quizz/Veda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Quizz/Veda.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/icons/pozadi.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/icons/pozadi.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/quiz/app/Metody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/quiz/app/Metody.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,7 +73,7 @@
       <workItem from="1717060898339" duration="4050000" />
       <workItem from="1717158408650" duration="3526000" />
       <workItem from="1717183204321" duration="5933000" />
-      <workItem from="1717228057515" duration="13044000" />
+      <workItem from="1717228057515" duration="16673000" />
     </task>
     <task id="LOCAL-00001" summary="Vztvoreni tridy login a pridani obrazku.">
       <created>1714658065659</created>
@@ -160,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717230126410</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Změna některých otázek.&#10;Vytvoření konečného okna kde se ukazuje počet správných odpovědí.Přemístění tlačítek odpovědí.">
+      <created>1717241598809</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1717241598809</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +189,7 @@
     <MESSAGE value="Vytvoření tlačítek na odpovědi." />
     <MESSAGE value="Přidání metody na kontrolování správnosti odpovědi. Změnění metody showNextQuestion.&#10;Vytvoření třídy ReakceOdpovedi pro reakci po kliknutí na odpověď." />
     <MESSAGE value="Vytvoření otázek a odpovědí pro všechny témata." />
-    <option name="LAST_COMMIT_MESSAGE" value="Vytvoření otázek a odpovědí pro všechny témata." />
+    <MESSAGE value="Změna některých otázek.&#10;Vytvoření konečného okna kde se ukazuje počet správných odpovědí.Přemístění tlačítek odpovědí." />
+    <option name="LAST_COMMIT_MESSAGE" value="Změna některých otázek.&#10;Vytvoření konečného okna kde se ukazuje počet správných odpovědí.Přemístění tlačítek odpovědí." />
   </component>
 </project>
