@@ -1,6 +1,7 @@
 package quiz.app;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
@@ -9,29 +10,31 @@ import java.util.HashMap;
 public class Metody {
     private static int currentQuestionIndex = 0;
     private static int selectedAnswerIndex = -1;
+    public static int totalCorrectAnswers = 0;
 
     public static void showNextQuestion(ArrayList<String> questions, HashMap<Integer, ArrayList<String>> answers, JLabel questionLabel, JButton[] answerButtons) {
         if (currentQuestionIndex < questions.size()) {
             questionLabel.setText(questions.get(currentQuestionIndex));
             ArrayList<String> currentAnswers = answers.get(currentQuestionIndex + 1);
-            for (int i = 0; i < answerButtons.length; i++) {
+            for (int i = 0; i < answerButtons.length ; i++) {
                 answerButtons[i].setText(currentAnswers.get(i));
                 answerButtons[i].setEnabled(true);
             }
             selectedAnswerIndex = -1;
         } else {
-            JOptionPane.showMessageDialog(null, "Konec kvízu!");
-            System.exit(0);
+            JOptionPane.showMessageDialog(null, "Odpověděli jste na všechny otázky.", "Konec kvízu", JOptionPane.INFORMATION_MESSAGE);
+            new Kongratulace(totalCorrectAnswers);
         }
         currentQuestionIndex++;
     }
 
     public static void checkAnswer(HashMap<Integer, Integer> correctAnswers, int currentQuestionIndex, int selectedAnswerIndex) {
         if (selectedAnswerIndex != -1) {
-            int correctIndex = correctAnswers.get(currentQuestionIndex - 1); // -1 because currentQuestionIndex was incremented in showNextQuestion
+            int correctIndex = correctAnswers.get(currentQuestionIndex );
             boolean isCorrect = selectedAnswerIndex == correctIndex;
             if (isCorrect) {
                 JOptionPane.showMessageDialog(null, "Správně", "Jeej", JOptionPane.INFORMATION_MESSAGE);
+                Metody.totalCorrectAnswers++;
             } else {
                 JOptionPane.showMessageDialog(null, "Špatně", "Oops", JOptionPane.ERROR_MESSAGE);
             }
@@ -64,6 +67,7 @@ public class Metody {
             checkAnswer(correctAnswers, currentQuestionIndex, index);
         }
     }
+
 
     public static void setSelectedAnswerIndex(int index) {
         selectedAnswerIndex = index;
