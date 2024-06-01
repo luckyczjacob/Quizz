@@ -1,14 +1,17 @@
 package quiz.app;
 
 
-import Quizz.Historie;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class Kongratulace extends JFrame {
+public class Kongratulace extends JFrame implements ActionListener {
 
+    JButton scoreboard;
         public Kongratulace(int totalCorrectAnswers) {
+
             setTitle("Gratulace");
             setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             setSize(1920, 1080);
@@ -20,11 +23,24 @@ public class Kongratulace extends JFrame {
             label.setFont(new Font("Arial", Font.BOLD, 20));
             add(label);
 
+            /**
+             * Celkový počet správných odpovědí
+             */
             JLabel correctLabel = new JLabel("Získali jste celkem " + totalCorrectAnswers + " správných odpovědí.");
             correctLabel.setForeground(Color.WHITE);
             correctLabel.setBounds(800,200,400,80);
             correctLabel.setFont(new Font("Arial", Font.BOLD, 20));
             add(correctLabel);
+
+            /**
+             * Tlačítko pro zobrazení skóre
+             */
+            scoreboard = new JButton("Start");
+            scoreboard.setBounds(803,430,130,25);
+            scoreboard.setBackground(Color.BLUE);
+            scoreboard.setForeground(Color.WHITE);
+            scoreboard.addActionListener(this);
+            add(scoreboard);
 
             ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("icons/otazky2.jpg"));
             JLabel image = new JLabel(i1);
@@ -34,6 +50,13 @@ public class Kongratulace extends JFrame {
             setVisible(true);
         }
 
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        if (e.getSource() == scoreboard){
+            setVisible(false);
+            new ScoreboardOkno();
+        }
     }
+}
 
 

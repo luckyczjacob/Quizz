@@ -1,7 +1,7 @@
 package Quizz;
 
-import loadFiles.LoadAnswers;
-import loadFiles.LoadQuestions;
+import loadFiles.NacistOdpovedi;
+import loadFiles.NacistOtazky;
 import quiz.app.Metody;
 
 
@@ -12,14 +12,32 @@ import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+/**
+ * Třída s tématem věda
+ */
 public class Historie extends JFrame {
-    private ArrayList<String> questions;
-    private HashMap<Integer, ArrayList<String>> answers;
-    public  HashMap<Integer, Integer> correctAnswers;
-    private JLabel questionLabel;
-    private JButton nextButton;
-    public  JButton[] answerButtons;
-    private JLabel timerLabel;
+    /**
+     * Seznam otázek
+     */
+    private ArrayList<String> otazky;
+    /**
+     * Mapa která uchovává odpovědi na otázky
+     */
+    private HashMap<Integer, ArrayList<String>> odpovedi;
+    /**
+     * Mapa která uchovává správné odpovědi na otázky
+     */
+    public  HashMap<Integer, Integer> spravneOdpovedi;
+    private JLabel otazkyText;
+    private JButton dalsiOtazka;
+    /**
+     * Pole tlačítek pro odpovědi
+     */
+    public JButton[] tlacitkaOdpovedi;
+    /**
+     * Zobrazení času
+     */
+    private JLabel cas;
 
 
     public Historie() {
@@ -28,84 +46,88 @@ public class Historie extends JFrame {
         setLayout(null);
 
         setSize(1920, 1080);
-        String questionsFilename = "HistorieOtazky";
-        String answersFilename = "HistorieOdpovedi";
-        questions = LoadQuestions.loadQuestionsFromFile(questionsFilename);
-        correctAnswers = new HashMap<>();
-        answers = LoadAnswers.loadAnswersFromFile(answersFilename, correctAnswers);
+        String otazkySoubor = "HistorieOtazky";
+        String odpovediSoubor = "HistorieOdpovedi";
+        otazky = NacistOtazky.nacistOtazkyZeSouboru(otazkySoubor);
+        spravneOdpovedi = new HashMap<>();
+        odpovedi = NacistOdpovedi.loadAnswersFromFile(odpovediSoubor, spravneOdpovedi);
 
-        questionLabel = new JLabel();
-        questionLabel.setBounds(400,200,1000,80);
-        questionLabel.setFont(new Font("Arial", Font.BOLD, 20));
-        questionLabel.setForeground(Color.BLACK);
-        add(questionLabel);
+        otazkyText = new JLabel();
+        otazkyText.setBounds(400,200,1000,80);
+        otazkyText.setFont(new Font("Arial", Font.BOLD, 20));
+        otazkyText.setForeground(Color.BLACK);
+        add(otazkyText);
 
-        answerButtons = new JButton[4];
+        tlacitkaOdpovedi = new JButton[4];
 
-        answerButtons[0] = new JButton();
-        answerButtons[0].setBounds(150, 400, 400, 100);
-        answerButtons[0].setFont(new Font("Arial", Font.BOLD, 20));
-        answerButtons[0].setForeground(Color.BLACK);
-        answerButtons[0].setBackground(Color.WHITE);
-        answerButtons[0].addActionListener(new Metody.ReakceOdpovedi(0, questions, answers, questionLabel, answerButtons, correctAnswers));
-        add(answerButtons[0]);
+        tlacitkaOdpovedi[0] = new JButton();
+        tlacitkaOdpovedi[0].setBounds(150, 400, 400, 100);
+        tlacitkaOdpovedi[0].setFont(new Font("Arial", Font.BOLD, 20));
+        tlacitkaOdpovedi[0].setForeground(Color.BLACK);
+        tlacitkaOdpovedi[0].setBackground(Color.WHITE);
+        tlacitkaOdpovedi[0].addActionListener(new Metody.ReakceOdpovedi(0, otazky, odpovedi, otazkyText, tlacitkaOdpovedi, spravneOdpovedi));
+        add(tlacitkaOdpovedi[0]);
 
-        answerButtons[1] = new JButton();
-        answerButtons[1].setBounds(150, 600, 400, 100);
-        answerButtons[1].setFont(new Font("Arial", Font.BOLD, 20));
-        answerButtons[1].setForeground(Color.BLACK);
-        answerButtons[1].setBackground(Color.WHITE);
-        answerButtons[1].addActionListener(new Metody.ReakceOdpovedi(1, questions, answers, questionLabel, answerButtons, correctAnswers));
-        add(answerButtons[1]);
+        tlacitkaOdpovedi[1] = new JButton();
+        tlacitkaOdpovedi[1].setBounds(150, 600, 400, 100);
+        tlacitkaOdpovedi[1].setFont(new Font("Arial", Font.BOLD, 20));
+        tlacitkaOdpovedi[1].setForeground(Color.BLACK);
+        tlacitkaOdpovedi[1].setBackground(Color.WHITE);
+        tlacitkaOdpovedi[1].addActionListener(new Metody.ReakceOdpovedi(1, otazky, odpovedi, otazkyText, tlacitkaOdpovedi, spravneOdpovedi));
+        add(tlacitkaOdpovedi[1]);
 
-        answerButtons[2] = new JButton();
-        answerButtons[2].setBounds(600, 400, 400, 100);
-        answerButtons[2].setFont(new Font("Arial", Font.BOLD, 20));
-        answerButtons[2].setForeground(Color.BLACK);
-        answerButtons[2].setBackground(Color.WHITE);
-        answerButtons[2].addActionListener(new Metody.ReakceOdpovedi(2, questions, answers, questionLabel, answerButtons, correctAnswers));
-        add(answerButtons[2]);
+        tlacitkaOdpovedi[2] = new JButton();
+        tlacitkaOdpovedi[2].setBounds(600, 400, 400, 100);
+        tlacitkaOdpovedi[2].setFont(new Font("Arial", Font.BOLD, 20));
+        tlacitkaOdpovedi[2].setForeground(Color.BLACK);
+        tlacitkaOdpovedi[2].setBackground(Color.WHITE);
+        tlacitkaOdpovedi[2].addActionListener(new Metody.ReakceOdpovedi(2, otazky, odpovedi, otazkyText, tlacitkaOdpovedi, spravneOdpovedi));
+        add(tlacitkaOdpovedi[2]);
 
-        answerButtons[3] = new JButton();
-        answerButtons[3].setBounds(600, 600, 400, 100);
-        answerButtons[3].setFont(new Font("Arial", Font.BOLD, 20));
-        answerButtons[3].setForeground(Color.BLACK);
-        answerButtons[3].setBackground(Color.WHITE);
-        answerButtons[3].addActionListener(new Metody.ReakceOdpovedi(3, questions, answers, questionLabel, answerButtons, correctAnswers));
-        add(answerButtons[3]);
+        tlacitkaOdpovedi[3] = new JButton();
+        tlacitkaOdpovedi[3].setBounds(600, 600, 400, 100);
+        tlacitkaOdpovedi[3].setFont(new Font("Arial", Font.BOLD, 20));
+        tlacitkaOdpovedi[3].setForeground(Color.BLACK);
+        tlacitkaOdpovedi[3].setBackground(Color.WHITE);
+        tlacitkaOdpovedi[3].addActionListener(new Metody.ReakceOdpovedi(3, otazky, odpovedi, otazkyText, tlacitkaOdpovedi, spravneOdpovedi));
+        add(tlacitkaOdpovedi[3]);
 
 
-        nextButton = new JButton("Další otázka");
-        nextButton.setBounds(460, 820, 250, 70);
-        nextButton.setBackground(Color.WHITE);
-        nextButton.setForeground(Color.BLACK);
+        dalsiOtazka = new JButton("Další otázka");
+        dalsiOtazka.setBounds(460, 820, 250, 70);
+        dalsiOtazka.setBackground(Color.WHITE);
+        dalsiOtazka.setForeground(Color.BLACK);
 
-        timerLabel = new JLabel("Čas: 300 sekund");
-        timerLabel.setBounds(540, 900, 250, 70);
-        add(timerLabel);
-        nextButton.addActionListener(new ActionListener() {
+        /**
+         * Zobrazení času
+         */
+        cas = new JLabel("Čas: 300 sekund");
+        cas.setBounds(540, 900, 250, 70);
+        add(cas);
+        dalsiOtazka.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                Metody.showNextQuestion(questions, answers, questionLabel, answerButtons);
+                Metody.dalsiOtazka(otazky, odpovedi, otazkyText, tlacitkaOdpovedi);
             }
         });
-        add(nextButton);
+        add(dalsiOtazka);
 
-        Metody.showNextQuestion(questions, answers, questionLabel, answerButtons);
+        Metody.dalsiOtazka(otazky, odpovedi, otazkyText, tlacitkaOdpovedi);
+
         ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("icons/pozadi22.jpg"));
         JLabel image = new JLabel(i1);
         image.setBounds(0,0,1920,1080);
         add(image);
 
-        Metody.startTimer(this,timerLabel);
+        /**
+         * Spuštění času
+         */
+        Metody.spustitCasovac(this, cas);
         setVisible(true);
-
     }
-
 
 
     public static void main(String[] args) {
         new Historie();
     }
-
 }

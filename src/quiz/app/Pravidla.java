@@ -1,6 +1,6 @@
 package quiz.app;
 
-import loadFiles.LoadRules;
+import loadFiles.NacistPravidla;
 import startQuiz.Start;
 
 import javax.swing.*;
@@ -10,23 +10,28 @@ import java.awt.event.ActionListener;
 
 
 
-public class Rules extends JFrame implements ActionListener {
+public class Pravidla extends JFrame implements ActionListener {
 
     JButton start;
     Font font = new Font("Arial",Font.BOLD,20);
 
-    Rules(){
+    Pravidla(){
         getContentPane().setBackground(Color.WHITE);
         setLayout(null);
         setTitle("Pravidla");
 
+        String nazevSouboru = "Pravidla";
+        /**
+         * Metoda, která načte text ze souboru "Pravidla"
+         */
+        NacistPravidla loadRules = new NacistPravidla();
+        String[] radky = loadRules.loadTextFromFile(nazevSouboru);
 
-        String filename = "Rules";
-        LoadRules loadRules = new LoadRules();
-        String[] lines = loadRules.loadTextFromFile(filename);
-
+        /**
+         * Oddělování každé řádky ze souboru
+         */
         int y = 300;
-        for (String line : lines) {
+        for (String line : radky) {
             JLabel text = new JLabel(line);
             text.setBounds(600, y, 700, 50);
             text.setFont(font);
@@ -67,6 +72,6 @@ public class Rules extends JFrame implements ActionListener {
     }
 
     public static void main(String[] args) {
-        new Rules();
+        new Pravidla();
     }
 }

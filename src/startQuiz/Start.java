@@ -3,6 +3,8 @@ package startQuiz;
 
 
 import Quizz.*;
+import loadFiles.NacistUzivatele;
+
 
 import javax.swing.*;
 import java.awt.*;
@@ -10,12 +12,24 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 
-
+/**
+ * Třída, kde si uživatel vybírá téma
+ */
 public class Start extends JFrame implements ActionListener {
-
+    private static String username;
+    /**
+     * Tlačítka pro výběr témat
+     */
     JButton historie, sport, veda, filmy, literatura, geografie;
     Font font = new Font("Bla",Font.BOLD,40);
     public Start() {
+        /**
+         * Nahrání jména
+         */
+        username = NacistUzivatele.nacistUzivatel();
+        /**
+         * Vzhled okna
+         */
         getContentPane().setBackground(Color.WHITE);
         setLayout(null);
         setTitle("Výběr tématu");
@@ -91,10 +105,16 @@ public class Start extends JFrame implements ActionListener {
         setVisible(true);
     }
 
+
+
     public static void main(String[] args) {
         new Start();
     }
 
+    /**
+     * Metoda volaná při stisknutí tlačítka. Otevře nové okno s tématem kvízu.
+     * @param ae the event to be processed
+     */
     @Override
     public void actionPerformed(ActionEvent ae) {
         if (ae.getSource() == historie) {

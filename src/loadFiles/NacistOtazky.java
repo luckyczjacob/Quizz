@@ -6,11 +6,18 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 
-
-public class LoadQuestions {
-    public static ArrayList<String> loadQuestionsFromFile(String filename) {
+/**
+ * Třída pro načtení otázek ze souboru
+ */
+public class NacistOtazky {
+    /**
+     * Metoda pro načtení otázek ze souboru.
+     * @param nazevSouboru Název souboru, ze kterého se mají načíst otázky.
+     * @return Seznam otázek načtených ze souboru
+     */
+    public static ArrayList<String> nacistOtazkyZeSouboru(String nazevSouboru) {
         ArrayList<String> questions = new ArrayList<>();
-        try (BufferedReader br = new BufferedReader(new FileReader(filename))) {
+        try (BufferedReader br = new BufferedReader(new FileReader(nazevSouboru))) {
             String line;
             while ((line = br.readLine()) != null) {
                 String[] parts = line.split(" ", 2);

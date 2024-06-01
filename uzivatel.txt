@@ -1,0 +1,13 @@
+jakub 6
+Ana 7
+Jan 4
+Jakub 5
+Ivana 3
+Samko 2
+Oliver 7
+Pato 6
+Ondrej 3
+Aneta 10
+Kubiceek 10
+Andrea 5
+2
